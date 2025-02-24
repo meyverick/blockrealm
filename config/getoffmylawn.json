@@ -9,7 +9,7 @@
   "enablePvPinClaims": false,
   "allowDamagingUnnamedHostileMobs": true,
   "allowDamagingNamedHostileMobs": false,
-  "claimProtectsFullWorldHeight": false,
+  "claimProtectsFullWorldHeight": true,
   "claimAreaHeightMultiplier": 1.0,
   "makeClaimAreaChunkBound": false,
   "allowClaimOverlappingIfSameOwner": false,
@@ -26,7 +26,7 @@
     "goml:angelic_aura": false,
     "goml:pvp_arena": false,
     "goml:explosion_controller": true,
-    "goml:force_field": true,
+    "goml:force_field": false,
     "goml:lake_spirit_grace": false,
     "goml:greeter": true
   },
