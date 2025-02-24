@@ -1,0 +1,12 @@
+/**
+!.gitignore
+
+!readme.md
+!license.md
+
+!config
+!mods
+
+!default-server.properties
+
+!*/*

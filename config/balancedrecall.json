@@ -1,0 +1,10 @@
+{
+  "take_damage_interrupts_recall": true,
+  "take_damage_puts_mirror_on_cooldown": false,
+  "recall_impossible_when_monsters_nearby": false,
+  "magic_mirror_use_time_seconds": 10.0,
+  "magic_mirror_cooldown_time_seconds": 1800.0,
+  "dimensional_mirror_use_time_seconds": 10.0,
+  "dimensional_mirror_cooldown_time_seconds": 1800.0,
+  "sleeping_mat_resets_phantom_timer": false
+}
