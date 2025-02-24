@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Boring Default Game Rules Configuration File",
+  "gameRulesHash": "479e332067a070c6e7f9707256e861e9a9468cb6dfd5806b960002e8bb65f947",
+  "description": "The config file for the \"Boring Default Game Rules\" mod.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "title": "$schema",
+      "description": "The standard method of assigning a JSON schema to a JSON file. This should either be set as \"config.schema.json\" always!",
+      "default": "config.schema.json"
+    },
+    "default_game_rules": {
+      "type": "object",
+      "title": "Default Game Rules",
+      "description": "Defines the default game rules, whose values will override the original default values. This mod provides game rule suggestions by generating a JSON schema.",
+      "properties": {
+        "announceAdvancements": {
+          "type": "boolean",
+          "title": "gamerule.announceAdvancements",
+          "default": true
+        },
+        "blockExplosionDropDecay": {
+          "type": "boolean",
+          "title": "gamerule.blockExplosionDropDecay",
+          "default": true
+        },
+        "commandBlockOutput": {
+          "type": "boolean",
+          "title": "gamerule.commandBlockOutput",
+          "default": true
+        },
+        "commandModificationBlockLimit": {
+          "type": "integer",
+          "title": "gamerule.commandModificationBlockLimit",
+          "default": 32768
+        },
+        "disableElytraMovementCheck": {
+          "type": "boolean",
+          "title": "gamerule.disableElytraMovementCheck",
+          "default": false
+        },
+        "disablePlayerMovementCheck": {
+          "type": "boolean",
+          "title": "gamerule.disablePlayerMovementCheck",
+          "default": false
+        },
+        "disableRaids": {
+          "type": "boolean",
+          "title": "gamerule.disableRaids",
+          "default": false
+        },
+        "doDaylightCycle": {
+          "type": "boolean",
+          "title": "gamerule.doDaylightCycle",
+          "default": true
+        },
+        "doEntityDrops": {
+          "type": "boolean",
+          "title": "gamerule.doEntityDrops",
+          "default": true
+        },
+        "doFireTick": {
+          "type": "boolean",
+          "title": "gamerule.doFireTick",
+          "default": true
+        },
+        "doImmediateRespawn": {
+          "type": "boolean",
+          "title": "gamerule.doImmediateRespawn",
+          "default": false
+        },
+        "doInsomnia": {
+          "type": "boolean",
+          "title": "gamerule.doInsomnia",
+          "default": true
+        },
+        "doLimitedCrafting": {
+          "type": "boolean",
+          "title": "gamerule.doLimitedCrafting",
+          "default": false
+        },
+        "doMobLoot": {
+          "type": "boolean",
+          "title": "gamerule.doMobLoot",
+          "default": true
+        },
+        "doMobSpawning": {
+          "type": "boolean",
+          "title": "gamerule.doMobSpawning",
+          "default": true
+        },
+        "doPatrolSpawning": {
+          "type": "boolean",
+          "title": "gamerule.doPatrolSpawning",
+          "default": true
+        },
+        "doTileDrops": {
+          "type": "boolean",
+          "title": "gamerule.doTileDrops",
+          "default": true
+        },
+        "doTraderSpawning": {
+          "type": "boolean",
+          "title": "gamerule.doTraderSpawning",
+          "default": true
+        },
+        "doVinesSpread": {
+          "type": "boolean",
+          "title": "gamerule.doVinesSpread",
+          "default": true
+        },
+        "doWardenSpawning": {
+          "type": "boolean",
+          "title": "gamerule.doWardenSpawning",
+          "default": true
+        },
+        "doWeatherCycle": {
+          "type": "boolean",
+          "title": "gamerule.doWeatherCycle",
+          "default": true
+        },
+        "drowningDamage": {
+          "type": "boolean",
+          "title": "gamerule.drowningDamage",
+          "default": true
+        },
+        "enderPearlsVanishOnDeath": {
+          "type": "boolean",
+          "title": "gamerule.enderPearlsVanishOnDeath",
+          "default": true
+        },
+        "fallDamage": {
+          "type": "boolean",
+          "title": "gamerule.fallDamage",
+          "default": true
+        },
+        "fireDamage": {
+          "type": "boolean",
+          "title": "gamerule.fireDamage",
+          "default": true
+        },
+        "forgiveDeadPlayers": {
+          "type": "boolean",
+          "title": "gamerule.forgiveDeadPlayers",
+          "default": true
+        },
+        "freezeDamage": {
+          "type": "boolean",
+          "title": "gamerule.freezeDamage",
+          "default": true
+        },
+        "globalSoundEvents": {
+          "type": "boolean",
+          "title": "gamerule.globalSoundEvents",
+          "default": true
+        },
+        "keepInventory": {
+          "type": "boolean",
+          "title": "gamerule.keepInventory",
+          "default": false
+        },
+        "lavaSourceConversion": {
+          "type": "boolean",
+          "title": "gamerule.lavaSourceConversion",
+          "default": false
+        },
+        "logAdminCommands": {
+          "type": "boolean",
+          "title": "gamerule.logAdminCommands",
+          "default": true
+        },
+        "maxCommandChainLength": {
+          "type": "integer",
+          "title": "gamerule.maxCommandChainLength",
+          "default": 65536
+        },
+        "maxCommandForkCount": {
+          "type": "integer",
+          "title": "gamerule.maxCommandForkCount",
+          "default": 65536
+        },
+        "maxEntityCramming": {
+          "type": "integer",
+          "title": "gamerule.maxEntityCramming",
+          "default": 24
+        },
+        "minecartMaxSpeed": {
+          "type": "integer",
+          "title": "gamerule.minecartMaxSpeed",
+          "description": "Exclusive on: dataPack.minecart_improvements.name",
+          "default": 8,
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "mobExplosionDropDecay": {
+          "type": "boolean",
+          "title": "gamerule.mobExplosionDropDecay",
+          "default": true
+        },
+        "mobGriefing": {
+          "type": "boolean",
+          "title": "gamerule.mobGriefing",
+          "default": true
+        },
+        "naturalRegeneration": {
+          "type": "boolean",
+          "title": "gamerule.naturalRegeneration",
+          "default": true
+        },
+        "playersNetherPortalCreativeDelay": {
+          "type": "integer",
+          "title": "gamerule.playersNetherPortalCreativeDelay",
+          "default": 0
+        },
+        "playersNetherPortalDefaultDelay": {
+          "type": "integer",
+          "title": "gamerule.playersNetherPortalDefaultDelay",
+          "default": 80
+        },
+        "playersSleepingPercentage": {
+          "type": "integer",
+          "title": "gamerule.playersSleepingPercentage",
+          "default": 100
+        },
+        "projectilesCanBreakBlocks": {
+          "type": "boolean",
+          "title": "gamerule.projectilesCanBreakBlocks",
+          "default": true
+        },
+        "randomTickSpeed": {
+          "type": "integer",
+          "title": "gamerule.randomTickSpeed",
+          "default": 3
+        },
+        "reducedDebugInfo": {
+          "type": "boolean",
+          "title": "gamerule.reducedDebugInfo",
+          "default": false
+        },
+        "sendCommandFeedback": {
+          "type": "boolean",
+          "title": "gamerule.sendCommandFeedback",
+          "default": true
+        },
+        "shiftingWares.allowMapReroll": {
+          "type": "boolean",
+          "title": "gamerule.shiftingWares.allowMapReroll",
+          "default": false
+        },
+        "shiftingWares.dailyReroll": {
+          "type": "boolean",
+          "title": "gamerule.shiftingWares.dailyReroll",
+          "default": true
+        },
+        "shiftingWares.depleteReroll": {
+          "type": "boolean",
+          "title": "gamerule.shiftingWares.depleteReroll",
+          "default": true
+        },
+        "showDeathMessages": {
+          "type": "boolean",
+          "title": "gamerule.showDeathMessages",
+          "default": true
+        },
+        "snowAccumulationHeight": {
+          "type": "integer",
+          "title": "gamerule.snowAccumulationHeight",
+          "default": 1
+        },
+        "spawnChunkRadius": {
+          "type": "integer",
+          "title": "gamerule.spawnChunkRadius",
+          "default": 2,
+          "minimum": 0,
+          "maximum": 32
+        },
+        "spawnRadius": {
+          "type": "integer",
+          "title": "gamerule.spawnRadius",
+          "default": 10
+        },
+        "spectatorsGenerateChunks": {
+          "type": "boolean",
+          "title": "gamerule.spectatorsGenerateChunks",
+          "default": true
+        },
+        "tntExplosionDropDecay": {
+          "type": "boolean",
+          "title": "gamerule.tntExplosionDropDecay",
+          "default": false
+        },
+        "universalAnger": {
+          "type": "boolean",
+          "title": "gamerule.universalAnger",
+          "default": false
+        },
+        "waterSourceConversion": {
+          "type": "boolean",
+          "title": "gamerule.waterSourceConversion",
+          "default": true
+        }
+      }
+    },
+    "generate_json_schema": {
+      "type": "boolean",
+      "title": "Generate JSON Schema",
+      "description": "If enabled, this mod will generate a JSON schema in order to aid with configuration. You may disable this if you don\u0027t plan to change the settings and want to save space, and once disabled, you can safely remove both the schema and the \"$schema\" property.",
+      "default": true
+    }
+  },
+  "required": [
+    "default_game_rules",
+    "generate_json_schema"
+  ]
+}

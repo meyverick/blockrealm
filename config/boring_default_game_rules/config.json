@@ -1,0 +1,11 @@
+{
+	"$schema": "config.schema.json",
+	"default_game_rules": {
+		"doFireTick": false,
+		"disableElytraMovementCheck": true,
+		"disablePlayerMovementCheck": true,
+		"spectatorsGenerateChunks": false,
+		"forgiveDeadPlayers": false
+	},
+	"generate_json_schema": true
+}
