@@ -29,13 +29,13 @@ defaultVisibility = "ACTIVATION"
 restrictedWaystones = [ "PLAYER" ]
 
 # The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
-scrollUseTime = 32
+scrollUseTime = 200
 
 # The time in ticks that it takes to use a warp plate. This is the time the player has to stand on top for.
-warpPlateUseTime = 15
+warpPlateUseTime = 60
 
 # The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
-warpStoneUseTime = 32
+warpStoneUseTime = 200
 
 [inventoryButton]
 
@@ -66,26 +66,28 @@ enableCosts = true
 entityDenyList = [ "minecraft:wither" ]
 
 # Set to ENABLED to have leashed mobs teleport with you. Set to SAME_DIMENSION to have leashed mobs teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
-transportLeashed = "ENABLED"
+transportLeashed = "DISABLED"
 
 # Set to ENABLED to have nearby pets teleport with you. Set to SAME_DIMENSION to have nearby pets teleport with you only if you're not changing dimensions. Set to DISABLED to disable.
 transportPets = "DISABLED"
 
 # List of warp requirements with comma-separated parameters in parentheses. Conditions can be defined as comma-separated list in square brackets. Will be applied in order.
 warpRequirements = [ 
-    "[is_not_interdimensional] scaled_add_xp_cost(distance, 0.01)", 
-    "[is_interdimensional] add_xp_cost(27)", 
-    "[source_is_warp_plate] multiply_xp_cost(0)", 
-    "[target_is_global] multiply_xp_cost(0)", 
-    "min_xp_cost(0)", 
-    "max_xp_cost(27)", 
-    "[source_is_inventory_button] add_cooldown(inventory_button, 300)"
+    "[is_interdimensional] add_xp_cost(27)",
+    "[is_not_interdimensional] scaled_add_xp_cost(distance, 0.03)",
+    "[source_is_warp_plate] multiply_xp_cost(1)",
+    "[target_is_global] multiply_xp_cost(1)",
+    "min_xp_cost(7)",
+    "max_xp_cost(10000)",
+    "[source_is_inventory_button] add_cooldown(inventory_button, 1800)",
+    "[source_is_warp_stone] add_cooldown(warp_stone, 1800)",
+    "[source_is_warp_stone] add_cooldown(inventory_button, 1800)"
 ]
 
 [worldGen]
 
 # Approximate chunk distance between wild waystones being generated. Set to 0 to disable generation.
-chunksBetweenWildWaystones = 0
+chunksBetweenWildWaystones = 25
 
 # Set to 'PRESET_FIRST' to first use names from the nameGenerationPresets. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
 nameGenerationMode = "PRESET_FIRST"
@@ -97,14 +99,14 @@ nameGenerationPresets = [  ]
 nameGenerationTemplate = "{MrPork}"
 
 # Set to REGULAR to have waystones spawn in some villages. Set to FREQUENT to have waystones spawn in most villages. Set to DISABLED to disable waystone generation in villages. Waystones will only spawn in vanilla or supported villages.
-spawnInVillages = "DISABLED"
+spawnInVillages = "ENABLED"
 
 # Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
 wildWaystoneStyle = "BIOME"
 
 # List of dimensions that wild waystones are allowed to spawn in. If left empty, all dimensions except those in wildWaystonesDimensionDenyList are used.
-wildWaystonesDimensionAllowList = [  ]
+wildWaystonesDimensionAllowList = [ "minecraft:overworld", "minecraft:the_nether", "minecraft:the_end" ]
 
 # List of dimensions that wild waystones are not allowed to spawn in. Only used if wildWaystonesDimensionAllowList is empty.
-wildWaystonesDimensionDenyList = [ "minecraft:overworld", "minecraft:the_nether", "minecraft:the_end" ]
+wildWaystonesDimensionDenyList = [  ]
 

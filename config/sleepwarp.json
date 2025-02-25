@@ -9,9 +9,9 @@
   "tick_lightning": false,
   "tick_monsters": false,
   "tick_animals": false,
-  "max_ticks_added": 40,
-  "player_multiplier": 0.1,
-  "monster_tick_multiplier": 0.25,
-  "animal_tick_multiplier": 0.25,
+  "max_ticks_added": 4,
+  "player_multiplier": 4,
+  "monster_tick_multiplier": 0,
+  "animal_tick_multiplier": 0,
   "log_error_messages": false
 }
