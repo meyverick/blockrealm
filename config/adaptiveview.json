@@ -1,8 +1,8 @@
 {
   "update_rate": 600,
-  "max_view_distance": 20,
-  "min_view_distance": 4,
-  "max_sim_distance": 20,
+  "max_view_distance": 12,
+  "min_view_distance": 7,
+  "max_sim_distance": 12,
   "min_sim_distance": 4,
   "allow_on_client": false,
   "broadcast_to_ops": false,
