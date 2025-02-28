@@ -1,171 +1,21 @@
 {
   "version": 1,
   "entities": {
-    "minecraft:blaze": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:bogged": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:breeze": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:camel": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:cow": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:creaking": {
-      "TRAMPLE_FARMLAND": false
-    },
     "minecraft:creeper": {
-      "EXPLODE_BLOCKS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:donkey": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:drowned": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:elder_guardian": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:ender_dragon": {
-      "TRAMPLE_FARMLAND": false
+      "EXPLODE_BLOCKS": false
     },
     "minecraft:enderman": {
-      "DESTROY_BLOCKS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:evoker": {
-      "TRAMPLE_FARMLAND": false
+      "DESTROY_BLOCKS": false
     },
     "minecraft:ghast": {
-      "EXPLODE_BLOCKS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:giant": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:goat": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:guardian": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:hoglin": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:horse": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:husk": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:illusioner": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:iron_golem": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:llama": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:mooshroom": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:mule": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:panda": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:pig": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:piglin": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:piglin_brute": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:pillager": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:player": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:polar_bear": {
-      "TRAMPLE_FARMLAND": false
+      "EXPLODE_BLOCKS": false
     },
     "minecraft:ravager": {
-      "DESTROY_BLOCKS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:sheep": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:shulker": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:skeleton": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:sniffer": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:snow_golem": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:spider": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:stray": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:strider": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:turtle": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:villager": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:vindicator": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:warden": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:witch": {
-      "TRAMPLE_FARMLAND": false
+      "DESTROY_BLOCKS": false
     },
     "minecraft:wither": {
       "DESTROY_BLOCKS": false,
-      "EXPLODE_BLOCKS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:wither_skeleton": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:zoglin": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:zombie": {
-      "BREAK_DOORS": false,
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:zombie_horse": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:zombie_villager": {
-      "TRAMPLE_FARMLAND": false
-    },
-    "minecraft:zombified_piglin": {
-      "TRAMPLE_FARMLAND": false
+      "EXPLODE_BLOCKS": false
     }
   }
 }
