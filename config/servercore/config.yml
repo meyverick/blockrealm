@@ -21,7 +21,7 @@ features:
   item-merge-radius: 3.5
   lobotomize-villagers:
     # Makes villagers tick less often if they are stuck in a 1x1 space.
-    enabled: true
+    enabled: false
     # Decides the interval in between villager ticks when lobotomized.
     tick-interval: 20
 
@@ -73,16 +73,16 @@ breeding-cap:
   # ► range = The range it will check for entities of the same type.
   # ► unlimited-height = Whether to ignore the vertical distance when checking for entities of the same type.
   villagers:
-    limit: 5
-    range: 5
+    limit: 32
+    range: 64
     unlimited-height: false
 
   # The breeding cap for animals.
   # Note that this cap only checks for animals of the same type.
   # If the limit is 32 you can still breed 32 cows and 32 pigs next to each other.
   animals:
-    limit: 5
-    range: 5
+    limit: 32
+    range: 64
     unlimited-height: false
 
 
@@ -167,7 +167,7 @@ commands:
 # Note: while this is a very powerful feature, it can still slow down mobfarms and break very specific technical contraptions.
 activation-range:
   # Enables activation range.
-  enabled: true
+  enabled: false
   # Briefly ticks entities newly added to the world for 10 seconds (includes both spawning and loading).
   # This gives them a chance to properly immunize when they are spawned if they should be. Can be helpful for mobfarms.
   tick-new-entities: true
