@@ -5,7 +5,7 @@
 		"disableElytraMovementCheck": true,
 		"disablePlayerMovementCheck": true,
 		"spectatorsGenerateChunks": false,
-		"forgiveDeadPlayers": false
+		"spawnChunkRadius": 0
 	},
-	"generate_json_schema": true
+	"generate_json_schema": false
 }

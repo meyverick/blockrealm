@@ -1,9 +1,11 @@
 {
-  "update_rate": 600,
-  "max_view_distance": 12,
+  "update_rate": 300,
+  "max_view_distance": 20,
   "min_view_distance": 7,
   "max_sim_distance": 12,
   "min_sim_distance": 4,
+  "max_chunk_ticking_distance": 11,
+  "min_chunk_ticking_distance": 3,
   "allow_on_client": false,
   "broadcast_to_ops": false,
   "broadcast_changes_default": "NONE",
@@ -12,28 +14,68 @@
   "broadcast_lock": [],
   "rules": [
     {
-      "type": "MSPT",
-      "min": 60,
+      "name": "High Memory: Reduce VD",
+      "type": "MEMORY",
+      "min": 86,
       "target": "VIEW",
-      "step": -2
+      "step": -4,
+      "update_rate": 4800
     },
     {
-      "type": "MSPT",
-      "min": 50,
+      "name": "Low Memory: Increase VD",
+      "type": "MEMORY",
+      "max": 69,
       "target": "VIEW",
-      "step": -1
+      "step": 1,
+      "update_rate": 1200
     },
     {
+      "name": "High MSPT: Reduce VD",
       "type": "MSPT",
-      "max": 40,
+      "min": 52,
       "target": "VIEW",
-      "step": 1
+      "step": -1,
+      "update_rate": 60
     },
     {
+      "name": "High MSPT: Reduce SD",
       "type": "MSPT",
-      "max": 30,
+      "min": 52,
+      "target": "SIMULATION",
+      "step": -2,
+      "update_rate": 120
+    },
+    {
+      "name": "High MSPT: Reduce TD",
+      "type": "MSPT",
+      "min": 52,
+      "target": "CHUNK_TICKING",
+      "step": -1,
+      "update_rate": 60
+     },
+    {
+      "name": "Low MSPT: Increase VD",
+      "type": "MSPT",
+      "max": 48,
       "target": "VIEW",
-      "step": 2
+      "step": 1,
+      "update_rate": 600
+    },
+    {
+      "name": "Low MSPT: Increase SD",
+      "type": "MSPT",
+      "max": 48,
+      "target": "SIMULATION",
+      "step": 2,
+      "update_rate": 1200
+    },
+    {
+      "name": "Low MSPT: Increase TD",
+      "type": "MSPT",
+      "max": 48,
+      "target": "CHUNK_TICKING",
+      "step": 1,
+      "update_rate": 600
     }
   ]
 }

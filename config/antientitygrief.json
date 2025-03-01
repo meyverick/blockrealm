@@ -5,7 +5,8 @@
       "EXPLODE_BLOCKS": false
     },
     "minecraft:enderman": {
-      "DESTROY_BLOCKS": false
+      "DESTROY_BLOCKS": false,
+      "PLACE_BLOCKS": false
     },
     "minecraft:ghast": {
       "EXPLODE_BLOCKS": false

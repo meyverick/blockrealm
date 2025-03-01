@@ -12,5 +12,5 @@
   "singleplayer-warning": true,
   "time-acceleration": true,
   "random-tickspeed-acceleration": true,
-  "automatic-updater": true
+  "automatic-updater": false
 }
