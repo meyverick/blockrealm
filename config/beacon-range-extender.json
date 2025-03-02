@@ -1,6 +1,6 @@
 {
   "rangePerLevel": 202,
-  "baseRange": 202,
+  "baseRange": 0,
   "rangeMultipliers": {
     "minecraft:iron_block": 1.0,
     "minecraft:gold_block": 2.0,
